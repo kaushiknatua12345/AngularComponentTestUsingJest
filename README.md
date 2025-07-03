@@ -1,15 +1,16 @@
-Project Information:
+<h2>Project Information:</h2>
 
 The Porject contains Component testing of Login Component and Auth Serice class using Jest which is to be reviewed
+<br/><br/>
+<b><i>The test files are:</i></b>
+<br/><br/>
 
-The test files are:
-
-** For Login Compopnent:
-login.componenttest.spec.ts
-login.componentunittest.spec.ts
-login.integrationtest.spec.ts
-
-** For Auth Service:
+<b>** For Login Compopnent:</b><br/>
+login.componenttest.spec.ts <br/>
+login.componentunittest.spec.ts<br/>
+login.integrationtest.spec.ts<br/>
+<br/><br/>
+<b>** For Auth Service:</b><br/>
 auth.service.spec.ts
 
 
