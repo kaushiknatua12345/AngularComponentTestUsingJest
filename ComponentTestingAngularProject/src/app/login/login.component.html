@@ -1,0 +1,33 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <div style="text-align: center; margin-top:500px; border:1px solid black; padding: 20px; width: 300px; margin: auto; background-color: bisque;">
+
+  <div style="margin-bottom: 50px;">
+  <input formControlName="email" placeholder="Enter Email"/>
+  <div class="error" style="color: red;" *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.touched || loginForm.get('email')?.dirty)">
+    Email is required.
+  </div>
+  </div>
+
+  <div style="margin-bottom: 50px;">
+
+  <input type="password" formControlName="password" placeholder="Enter Password"/>
+  <div class="error" style="color: red;" *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.touched || loginForm.get('password')?.dirty)">
+    Password is required.
+  </div>
+ 
+  </div>
+
+  <div style="margin-bottom: 50px;">    
+  <button type="submit">Login</button>
+  </div>  
+
+  <div style="display: block; text-decoration: solid;" *ngIf="loginSuccess">Login successful!</div>
+<div class="error" style="color: red;" *ngIf="errorMessage">{{ errorMessage }}</div>
+  
+  </div>
+
+</form>
+
+<br/>
+
